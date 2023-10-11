@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct BMIApp: App {
+    @StateObject var bmiViewModel = BMIViewModel()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(bmiViewModel: bmiViewModel)
         }
     }
 }

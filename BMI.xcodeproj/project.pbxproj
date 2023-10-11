@@ -12,6 +12,8 @@
 		67418A4C2AC6D1BF00CB8803 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67418A4B2AC6D1BF00CB8803 /* Assets.xcassets */; };
 		67418A4F2AC6D1BF00CB8803 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67418A4E2AC6D1BF00CB8803 /* Preview Assets.xcassets */; };
 		67418A562AC6D5BE00CB8803 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67418A552AC6D5BE00CB8803 /* Extensions.swift */; };
+		93C2F8C52AD68A6D007D1ABC /* BMIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C2F8C42AD68A6D007D1ABC /* BMIModel.swift */; };
+		93C2F8C72AD68AEB007D1ABC /* BMIViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C2F8C62AD68AEB007D1ABC /* BMIViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		67418A4B2AC6D1BF00CB8803 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67418A4E2AC6D1BF00CB8803 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		67418A552AC6D5BE00CB8803 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		93C2F8C42AD68A6D007D1ABC /* BMIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMIModel.swift; sourceTree = "<group>"; };
+		93C2F8C62AD68AEB007D1ABC /* BMIViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMIViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,8 @@
 			children = (
 				67418A472AC6D1BE00CB8803 /* BMIApp.swift */,
 				67418A492AC6D1BE00CB8803 /* ContentView.swift */,
+				93C2F8C62AD68AEB007D1ABC /* BMIViewModel.swift */,
+				93C2F8C42AD68A6D007D1ABC /* BMIModel.swift */,
 				67418A4B2AC6D1BF00CB8803 /* Assets.xcassets */,
 				67418A4D2AC6D1BF00CB8803 /* Preview Content */,
 				67418A552AC6D5BE00CB8803 /* Extensions.swift */,
@@ -140,8 +146,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93C2F8C72AD68AEB007D1ABC /* BMIViewModel.swift in Sources */,
 				67418A4A2AC6D1BE00CB8803 /* ContentView.swift in Sources */,
 				67418A562AC6D5BE00CB8803 /* Extensions.swift in Sources */,
+				93C2F8C52AD68A6D007D1ABC /* BMIModel.swift in Sources */,
 				67418A482AC6D1BE00CB8803 /* BMIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,7 +279,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BMI/Preview Content\"";
-				DEVELOPMENT_TEAM = YA2L55RA8L;
+				DEVELOPMENT_TEAM = J8A42WJ9LX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -300,7 +308,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BMI/Preview Content\"";
-				DEVELOPMENT_TEAM = YA2L55RA8L;
+				DEVELOPMENT_TEAM = J8A42WJ9LX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
