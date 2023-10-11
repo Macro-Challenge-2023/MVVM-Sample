@@ -9,24 +9,24 @@ import SwiftUI
 
 struct ContentView: View {
     @ObservedObject var bmiViewModel: BMIViewModel
-    
+
     var body: some View {
         VStack {
             Form {
-                Section("Weight"){
+                Section("Weight") {
                     TextField("Weight", value: $bmiViewModel.weight, formatter: NumberFormatter())
                 }
-                
-                Section("Height"){
+
+                Section("Height") {
                     TextField("Height", value: $bmiViewModel.height, formatter: NumberFormatter())
                 }
-                
+
                 Button("Calculate") {
                     bmiViewModel.calculate()
                 }
                 .listRowBackground(Color.clear)
                 .buttonStyle(.borderedProminent)
-                
+
                 Section("Result") {
                     VStack(alignment: .leading) {
                         Text(bmiViewModel.resultTitle)
