@@ -15,7 +15,7 @@ class BMIViewModel: ObservableObject {
             bmiModel.weight = newValue
         }
         get {
-            return bmiModel.weight
+            bmiModel.weight
         }
     }
 
@@ -24,36 +24,15 @@ class BMIViewModel: ObservableObject {
             bmiModel.height = newValue
         }
         get {
-            return bmiModel.height
+            bmiModel.height
         }
     }
 
-    var weightAdjustment: Double {
-        set {
-            bmiModel.weightAdjustment = newValue
-        }
-        get {
-            return bmiModel.weightAdjustment
-        }
-    }
+    var weightAdjustment: Double { bmiModel.weightAdjustment }
 
-    var resultTitle: String {
-        set {
-            bmiModel.resultTitle = newValue
-        }
-        get {
-            return bmiModel.resultTitle
-        }
-    }
+    var resultTitle: String { bmiModel.resultTitle }
 
-    var resultDescription: String {
-        set {
-            bmiModel.resultDescription = newValue
-        }
-        get {
-            return bmiModel.resultDescription
-        }
-    }
+    var resultDescription: String { bmiModel.resultDescription }
 
     func calculate() {
         bmiModel.calculate()

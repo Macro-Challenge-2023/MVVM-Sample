@@ -10,11 +10,11 @@ import Foundation
 struct BMIModel {
     var weight: Double = 0
     var height: Double = 0
-    var weightAdjustment: Double = 0
-    var resultTitle: String = ""
-    var resultDescription: String = ""
+    private(set) var weightAdjustment: Double = 0
+    private(set) var resultTitle = ""
+    private(set) var resultDescription = ""
 
-    func calculateWeightAdjustment(normalBMI: Double) -> Double {
+    private func calculateWeightAdjustment(normalBMI: Double) -> Double {
         let idealWeight = normalBMI * (height / 100 * height / 100)
         return abs(weight - idealWeight).rounded(toPlaces: 2)
     }
